@@ -1,0 +1,131 @@
+/****************************************************************************
+ *                                                                          *
+ *  UNIVERSIDADE FEDERAL DE ITAJUBA 1S/2017 - EM604                  		 *
+ *                                                                          *
+ *  Function: 74181 Behavior System			                                  *
+ *                                                                          *
+ *  Written by: Leonardo Gonçalves                                          *
+ *                                                                          *
+ *  Last modified: April 12, 2017                                            *
+ *                                                                          *
+ ****************************************************************************/
+ 
+ module projeto (S, A, B, M, CIN_N, F, COUT_N);
+ 
+ input [3:0] A, B, S;
+ input CIN_N, M;
+ output [3:0] F;
+ output COUT_N;
+ reg [3:0] F;
+  
+ always @(S or A or B)
+ begin
+	if(M)
+		begin
+			case (S)
+				4'b0000:
+					begin
+						F <= ~A;
+					end
+					
+				4'b0001:
+					begin
+						F <= ~(A&B);
+					end
+					
+				4'b0010:
+					begin
+						F <= ~A | B;
+					end
+					
+				4'b0011:
+					begin
+						F <= 4'b0000;
+					end
+					
+				4'b1111:
+					begin
+						F <= A;
+					end
+					
+				default:
+					begin
+					end
+				
+			endcase
+		end
+	else
+		begin
+			if(CIN_N)
+				begin
+					case (S)
+						4'b0000:
+							begin
+								F <= A;
+							end
+							
+						4'b0001:
+							begin
+								F <= A & B;
+							end
+							
+						4'b0010:
+							begin
+								F <= A & ~B;
+							end
+							
+						4'b0011:
+							begin
+								F <= 4'b0000;
+							end
+							
+						4'b1111:
+							begin
+								F <= A + 4'b0001;
+							end
+							
+						default:
+							begin
+							end
+							
+					endcase
+				end
+				else
+				begin
+					case (S)
+						4'b0000:
+							begin
+								F <= A - 4'b0001;
+							end
+							
+						4'b0001:
+							begin
+								F <= (A & B) - 4'b0001;
+							end
+							
+						4'b0010:
+							begin
+								F <= A & ~B - 4'b0001;
+							end
+							
+						4'b0011:
+							begin
+								F <= 4'b0000;
+							end
+							
+						4'b1111:
+							begin
+								F <= A;
+							end
+							
+						default:
+							begin
+							end
+							
+					endcase
+				end
+		end
+	
+ end
+ endmodule
+ 
