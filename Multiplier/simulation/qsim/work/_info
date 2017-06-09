@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Leonardo\Documents\Mestrado\Multiplier\simulation\qsim
+vmultiplier
+Z1 IVD7M<THkNlB?JjCLPzW]S1
+Z2 VEIiMN@970RYI@O<bB<`Pn0
+Z3 dC:\Users\Leonardo\Documents\Mestrado\Multiplier\simulation\qsim
+Z4 w1496625502
+Z5 8multiplier.vo
+Z6 Fmultiplier.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|multiplier.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 UbQ>ln3J^?nX]:j4V9PzA2
+!s85 0
+Z11 !s108 1496625504.328000
+Z12 !s107 multiplier.vo|
+!s101 -O0
+vmultiplier_vlg_check_tst
+!i10b 1
+Z13 !s100 k6kaV`N1g2gToO@m0fj1H1
+Z14 IITX<[g<LUThVQakE>L_PA3
+Z15 VT]=Joo3j1`D815oU`=Oi>2
+R3
+Z16 w1496625500
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 67
+R7
+r1
+!s85 0
+31
+Z19 !s108 1496625504.459000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+vmultiplier_vlg_sample_tst
+!i10b 1
+Z22 !s100 [iAgONnEAa1oF5]:;IP[G2
+Z23 IPNKISa>_j?>hm17?5>YA00
+Z24 VI:oU0U[<FKXmHNX8c1XA23
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vmultiplier_vlg_vec_tst
+!i10b 1
+Z25 !s100 V7@VKmYbkgl:_5YOMXjzD1
+Z26 I[SAN1[m2cUnM<4nFRMWJI2
+Z27 V2;[nQAL>5:S>7m<1n;=d31
+R3
+R16
+R17
+R18
+Z28 L0 431
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
