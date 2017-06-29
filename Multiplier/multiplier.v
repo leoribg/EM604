@@ -11,63 +11,69 @@
  ****************************************************************************/
  
  
- module multiplier (A, B, loadA, loadB, clk, rst, S);
- 
- input wire loadA, loadB, clk, rst;
- input wire [7:0] A, B;
- output reg [15:0] S;
- 
- reg [15:0] regA;
- reg [7:0] regB;
- //reg [15:0] S;
- integer count;
- 
- initial
- begin
-	//if(loadA == 1'b1 && loadB == 1'b1)
-		//begin
-			S <= 0;
-			count <= 8;
-			regA <= { 8'b00000000, A };
-			regB <= B;
-		//end
- end
- 
- always @( posedge clk ) 
- begin
-	if (rst == 1'b1)
-		begin
-			S <= 0;
-		end
-	if (count) 
-		begin	
-			if(regB[0] == 1'b1 )
-				begin
-					S <= S + regA;
-				end 
-		end	
- end
- 
- always @( negedge clk ) 
- begin
- 	if (rst == 1'b1)
-		begin
-			if(loadA == 1'b1 && loadB == 1'b1)
-			begin
-				count = 8;
-				regA <= { 8'b00000000, A };
-				regB <= B;
-			end
-		end
-	if (count) 
-		begin	
-			regB <= (regB >> 1);
-			regA <= (regA << 1);
-		end
-	count = (count - 1);
- end
+module multiplier
+(
+
+	input wire [7:0] A,B,
+	input wire reset,clock, 
 	
- //assign S = S;	
- 
- endmodule
- 
+	output wire [15:0] S
+);	
+	
+	
+	reg [15:0] reg_S;
+	reg [15:0] reg_A;
+	reg [7:0] reg_B;
+	
+	reg [4:0] counter; 
+	
+	
+	initial begin
+	
+		reg_S = 0;
+	   counter = 8;
+		reg_A = { 8'b00000000, A };
+		reg_B = B;
+	
+	end
+	
+	
+	always @( posedge clock) begin
+
+		if(reset == 1'b1) begin
+		  
+		  reg_S = 0;
+		  
+		end
+		
+		else begin
+			if (counter) begin	
+				if(reg_B[0] == 1'b1 )begin
+					reg_S <= reg_S + reg_A;
+					
+				end 
+		   end
+			
+			
+	   end	
+   end	
+
+  always @( negedge clock ) begin
+		
+		if(reset == 1'b1) begin
+		  counter = 8;
+		  reg_A = { 8'b00000000, A };
+		  reg_B = B;
+		end
+		else begin 
+			if (counter) begin	
+				reg_B <= (reg_B >> 1);
+				reg_A <= (reg_A << 1);
+			end
+			counter = (counter - 1);
+		end
+  end
+  
+  assign S = reg_S;	 
+
+endmodule
