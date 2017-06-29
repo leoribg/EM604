@@ -1,0 +1,24 @@
+module TesteDivisor (clk, rst, quociente, resto, ini_div, fim_div, contador, estado, sinal_ok, A, B, enA, enB);
+input enA, enB; // sinais de carregamento de A e B no reg AB que garente que a divisão comece com a entradaA e entradaB posicionados
+input  rst, clk, ini_div;
+input [7:0] A,B ; // entradas que vem da memoria
+
+output [8:0] resto;  // resto é a saida do reg P
+output [5:0] contador;
+output [7:0] quociente;  // quociente é a saida do reg A
+output [2:0] estado ;
+output fim_div, sinal_ok; 
+
+wire [8:0] saidaPW, saidaBW, saidaSoma;
+wire [7:0] Out_A, Out_B;
+
+assign resto = saidaPW;
+	 
+	maquina_divisor MD(ini_div, clk, saidaPW[8], loadA, loadB, loadP, enableA, enableB, enableP, desloc, fim_div, CtrlS, estado,contador);
+	regA	RA(Out_A, ~c_outP, desloc, clk, rst, loadA, enableA, quociente, c_outA);
+	regP	RP(saidaSoma, desloc, clk, rst, loadP, enableP, c_outA, c_outP, saidaPW);
+	regB	RB(Out_B, clk, rst, loadB, enableB, saidaBW);
+	RegAB RAB(clk, rst, A , B, enA, enB, sinal_ok, Out_A, Out_B);
+	mux2_1	OP(saidaPW, saidaBW, CtrlS, saidaSoma);
+
+ endmodule 

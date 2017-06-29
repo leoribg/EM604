@@ -1,0 +1,32 @@
+module memoriaROM (controle, endereco, hab_leitura, saida);
+
+input controle, hab_leitura;
+input [8:0] endereco;
+output reg [7:0] saida;
+reg [7:0] temp [0:511];
+reg [8:0] indice; 
+
+initial begin 
+	temp [9'd0] = 8'b0001_1011;// 27
+	temp [9'd1] = 8'b0000_0101;// 5
+	temp [9'd2] = 8'b0001_00001;// 33
+	temp [9'd3] = 8'b0000_0011;// 3
+	
+	indice = 9'd4;
+	while( indice < 9'd512)
+		begin
+			temp[indice] = 8'b1111_1111;
+			indice = indice + 9'd1;
+		end
+end
+
+always @(posedge controle)
+begin
+	if ( hab_leitura == 1)
+		saida <= temp[endereco];
+end
+endmodule
+	
+ 
+	
+ 

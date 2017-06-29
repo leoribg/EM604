@@ -1,0 +1,20 @@
+module project ( rst,clk, addressA, addressB, quotientFlag, remainderFlag, finished);
+input rst, clk;
+input [8:0]addressA, addressB;// endereços de A e B
+output [7:0]quotientFlag;
+output [8:0] remainderFlag;
+output finished;
+
+ 
+wire [7:0] saidaMem, quoc;
+wire [8:0] barramentoEnd, rest;
+assign finished = finished_div;
+ 
+
+memROM				MROM(clk, barramentoEnd, 1, saidaMem);
+stateMachine		SM(rst, clk, sinal_out,  enA, enB, ini_div, addressA, addressB , barramentoEnd ,estadoGeral);
+divisor				DIV(clk, rst, quoc , rest, ini_div, finished_div, contador, estado, sinal_out, saidaMem, saidaMem, enA, enB);
+regResp 				RR(clk, rst, quoc, rest, finished_div, quotientFlag, remainderFlag);
+
+
+endmodule

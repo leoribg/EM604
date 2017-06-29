@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.732
+TNS   : -87.353
+
+Type  : Slow 1200mV 85C Model Setup 'stateMachine:SM|now.S1'
+Slack : -1.400
+TNS   : -11.145
+
+Type  : Slow 1200mV 85C Model Hold 'stateMachine:SM|now.S1'
+Slack : -0.063
+TNS   : -0.157
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.021
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -68.174
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stateMachine:SM|now.S1'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stateMachine:SM|now.S0'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.363
+TNS   : -72.452
+
+Type  : Slow 1200mV 0C Model Setup 'stateMachine:SM|now.S1'
+Slack : -1.320
+TNS   : -10.623
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.022
+TNS   : -0.022
+
+Type  : Slow 1200mV 0C Model Hold 'stateMachine:SM|now.S1'
+Slack : 0.043
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -68.174
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stateMachine:SM|now.S1'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stateMachine:SM|now.S0'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.903
+TNS   : -25.672
+
+Type  : Fast 1200mV 0C Model Setup 'stateMachine:SM|now.S1'
+Slack : -0.583
+TNS   : -4.420
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.335
+TNS   : -0.512
+
+Type  : Fast 1200mV 0C Model Hold 'stateMachine:SM|now.S1'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -71.674
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stateMachine:SM|now.S1'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stateMachine:SM|now.S0'
+Slack : 0.405
+TNS   : 0.000
+
+------------------------------------------------------------

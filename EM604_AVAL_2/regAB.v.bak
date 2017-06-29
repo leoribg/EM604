@@ -1,0 +1,38 @@
+module RegAB (clk, rst, entradaA, entradaB, enA, enB, sinal_ok, saidaA, saidaB);
+//Assegura que o divisor só começará fazer contas quando tiver as duas entradas, evitando que comece as contas antes do esperado.
+
+input clk, rst, enA, enB;
+input	[7:0]entradaA, entradaB;
+ 
+output [7:0] saidaA, saidaB;
+output reg sinal_ok;
+
+reg	[7:0] auxA, auxB;
+reg A,B;
+
+assign saidaA = auxA;
+assign saidaB = auxB;
+
+always @ (posedge clk or posedge rst)
+begin
+	if(rst)
+	begin
+		auxA <= 8'b0000_0000;
+		auxB <= 8'b0000_0000;
+	end	
+	else if(enA == 1'b1)
+		begin
+			auxA <= entradaA;
+			A = 1'b1;
+		end
+	else	if(enB == 1'b1)
+		begin
+			auxB <= entradaB;
+			B = 1'b1;
+		end
+	else
+		if(A & B)
+				sinal_ok <= 1'b1;
+end	
+endmodule
+ 

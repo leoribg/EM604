@@ -1,0 +1,141 @@
+module maquinaEstadoGeral (rst, clk, sinal_ok,  enA, enB, ini_div, barramentoEnd1, barramentoEnd2 , barramentoEnd ,estado);
+
+input rst, clk, sinal_ok; // sinal_ok garante que os valores de A e B já foram carregados no registrador AB
+input [8:0] barramentoEnd1, barramentoEnd2;
+
+output reg [8:0] barramentoEnd ;
+output reg  enA, enB, ini_div; // comanda os sinais de enA e enB e ini_div
+output reg [2:0] estado;
+ 
+reg	[2:0] atual, seguinte;
+reg	[8:0] ada, adb; //para não ter perda de endereço, uma variavel interna armazena os enderecos previamente carregados
+reg	okA, okB; //okA e okB sinalizam se ja passou pelo estado de carregamento
+
+parameter S0 = 3'b000, S1 = 3'b001, S2 = 3'b010, S3 = 3'b011,  S4 = 3'b100, S5 = 3'b101, S6 = 3'b110;
+			// INICIO,  	MEM_A,        LE_A, 	    MEM_B, 		   LE_B, 			READY, 		COMECA
+
+always @ (negedge clk, posedge rst) // primeiro always cuido do rst
+	if (rst)
+			atual <= S0;
+	else	
+			atual	<=	seguinte;	 
+			
+
+always @ (*)
+begin
+	case (atual)
+		S0:	seguinte	<=	S1;
+		
+		S1:	seguinte	<=	S2;
+	
+		S2:		if (okA)	seguinte	<=	S3;
+					else		seguinte	<=	S2;
+		
+		S3:		seguinte	<=	S4;
+		
+		S4:		if(okB)	seguinte	<=	S5;
+					else		seguinte	<=	S4;
+		
+		
+		S5:	if (!sinal_ok)	seguinte	<=	S0;
+					else			seguinte	<=	S6;
+		
+		S6:	seguinte	<=	S6;
+		
+		default	seguinte	<=	S0;
+	endcase
+end
+
+
+always @ (atual)
+begin 
+	case (atual)
+		S0:	
+			begin
+				ini_div	<=	1'b1;
+				enA		<=	1'b0;
+				enB		<=	1'b0;
+				okA		<=	1'b0;
+				okB		<=	1'b0;
+				ada		<=	barramentoEnd1;
+				adb		<=	barramentoEnd2;
+				estado <= S0;
+			end
+		//todas as saidas sao resetadas e sao lidos os enderecos de memoria
+		S1:
+			begin	
+				ini_div	<=	1'b1;
+				enA		<=	1'b0;
+				enB		<=	1'b0;
+				barramentoEnd	<=	ada;
+				okA		<=	1'b0;
+				okB		<=	1'b0;
+				estado <= S1;
+			end
+		//envia o endereco de A para a memoria
+		S2:
+			begin
+				ini_div	<=	1'b1;
+				enA		<=	1'b1;
+				enB		<=	1'b0;
+				okA		<=	1'b1;
+				okB		<=	1'b0;
+				estado <= S2;
+			end
+		//pega a saida da memoria e mando para o regAB e digo OkA (foi carregado)
+		S3:
+			begin
+				ini_div	<=	1'b1;
+				enA		<=	1'b0;
+				enB		<=	1'b0;
+				barramentoEnd	<= adb;
+				okA		<=	1'b1;
+				okB		<=	1'b0;
+				estado <= S3;
+			end
+		 //envia o endereco de B para a memoria
+		S4:
+			begin
+				ini_div	<=	1'b1;
+			//barramentoEnd	<= adb;
+				enA		<=	1'b0;
+				enB		<=	1'b1;
+				okA		<=	1'b1;
+				okB		<=	1'b1;
+				estado <= S4;
+			end
+		//pega a saida da memoria e passo para o regAB e digo okB tb
+		S5:	
+			begin
+				ini_div	<=	1'b1;
+				enA		<=	1'b0;
+				enB		<=	1'b0;
+				okA		<=	1'b1;
+				okB		<=	1'b1;
+				estado <= S5;
+			end
+		//checa se ja estao carregados os dados
+		S6:	
+			begin
+				ini_div	<=	1'b0;
+				enA		<=	1'b0;
+				enB		<=	1'b0;
+				okA		<=	1'b0;
+				okB		<=	1'b0;
+				estado <= S6;
+			end
+		//da inicio ao processo de divisao
+	endcase
+end
+		
+endmodule 
+			
+				
+		
+		
+	 	 
+
+
+
+ 
+

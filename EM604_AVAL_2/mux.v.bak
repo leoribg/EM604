@@ -1,0 +1,9 @@
+module mux2_1 (entradaP, entradaB, ctrlS, saida);
+input [8:0] entradaB, entradaP;
+input ctrlS;
+
+output [8:0] saida;
+assign saida = (ctrlS == 1'b1) ? entradaP + entradaB : entradaP - entradaB;
+
+endmodule
+

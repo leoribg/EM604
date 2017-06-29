@@ -1,0 +1,18 @@
+
+State Machine - |project2|divisor:DIV|divisorSM:DSM|next
+Name next.Fim next.Restaura next.EsqQuoc next.Subtrai next.Desloca 
+next.Desloca 0 0 0 0 0 
+next.Subtrai 0 0 0 1 1 
+next.EsqQuoc 0 0 1 0 1 
+next.Restaura 0 1 0 0 1 
+next.Fim 1 0 0 0 1 
+
+State Machine - |project2|stateMachine:SM|now
+Name now.S6 now.S5 now.S4 now.S3 now.S2 now.S1 now.S0 
+now.S0 0 0 0 0 0 0 0 
+now.S1 0 0 0 0 0 1 1 
+now.S2 0 0 0 0 1 0 1 
+now.S3 0 0 0 1 0 0 1 
+now.S4 0 0 1 0 0 0 1 
+now.S5 0 1 0 0 0 0 1 
+now.S6 1 0 0 0 0 0 1 

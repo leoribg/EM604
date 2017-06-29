@@ -1,0 +1,32 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do project2_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Modifying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {project2.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project2
+# 
+# Top level modules:
+# 	project2
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1 {C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module project2_TB
+# 
+# Top level modules:
+# 	project2_TB
+# 
+# vsim -t 1ps -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  project2.v
+# vsim -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps project2.v 
+# ** Error: (vsim-19) Failed to access library 'project2' at "project2".
+# 
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./project2_run_msim_gate_verilog.do PAUSED at line 12

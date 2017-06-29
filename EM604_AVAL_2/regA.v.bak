@@ -1,0 +1,30 @@
+module regA (entrada, c_in, desloc, clk, rst, load, enable, saida, c_out);
+
+input [7:0] entrada;
+input clk, rst, load, enable, desloc;
+input c_in;
+
+output [7:0] saida;
+output c_out;
+
+reg[7:0] aux;
+ 
+
+assign saida = aux;
+assign c_out = aux[7];
+
+always @(posedge clk or posedge rst)
+
+	if(rst == 1'b1)	
+		aux <= 8'b0000_0000;
+	
+	else	if(enable == 1'b1)
+		
+				if(load == 1'b1) 
+					aux <= entrada;
+					
+				else	if( desloc == 1'b1)
+						aux <= {aux[6:0], 1'b0};
+				else
+							aux <= {aux[7:1], c_in};
+endmodule

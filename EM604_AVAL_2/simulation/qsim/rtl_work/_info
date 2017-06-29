@@ -1,0 +1,234 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Leonardo\Documents\Mestrado\EM604\EM604_2_V1\simulation\qsim
+vAddSub
+IdjMif[[Q6`oL;]6<?;HC71
+V7EiA1=MLje@hzKkEb:iGA3
+Z1 dC:\Users\Leonardo\Documents\Mestrado\EM604\EM604_2_V1\simulation\qsim
+w1498410665
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/mux.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/mux.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1 -O0
+n@add@sub
+!i10b 1
+!s100 5CT60;8c1ALWHB[3<9eC;1
+!s85 0
+!s108 1498698442.080000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/mux.v|
+!s101 -O0
+vdivisor
+I@8z0l2^Df@_=a?PDjd@9M2
+VJh5QY=FiaU6g0EV26n5An1
+R1
+w1498446951
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisor.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisor.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 DPH0ZNjVo`NKLb;?L3:RV2
+!s85 0
+!s108 1498698442.348000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisor.v|
+!s101 -O0
+vdivisorSM
+I77FA[C1]OJcK?7hSI:3143
+VeBV;zilD]Eh@VbQ3On<WB0
+R1
+w1498697706
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisorSM.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisorSM.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ndivisor@s@m
+!i10b 1
+!s100 ^YX22^[9zQ6[[XR7XEgb43
+!s85 0
+!s108 1498698442.261000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisorSM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/divisorSM.v|
+!s101 -O0
+vmemROM
+IoRN>PbUQKX40`lzZ84@BR0
+VlF9FVfLfgCSfF4k8jO?Wb0
+R1
+w1498447598
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/memROM.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/memROM.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nmem@r@o@m
+!i10b 1
+!s100 7LjfeYl2oYKzRX14UoWN[2
+!s85 0
+!s108 1498698442.170000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/memROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/memROM.v|
+!s101 -O0
+vproject2
+I8OAKza4GgUl=zTe6MFY<_0
+Z5 V6YlC344fm>3?YdzQEIaEn0
+R1
+w1498448257
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ^=0EziCnAc3m9oi];0EgQ2
+!s85 0
+!s108 1498698441.996000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2.v|
+!s101 -O0
+vproject2_TB
+!i10b 1
+!s100 N5`M[FO28mZ;@9^m9cLLL1
+I3nU[Rk;gL^`DS:Jn>Yg9B3
+VUnciB6C[O7NYa4i<i<LI20
+R1
+w1498698311
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1498698442.439000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v|
+!s101 -O0
+R3
+R4
+nproject2_@t@b
+vregA
+IKKm]Pd81ma`<2AUgHS1bN2
+VZEPbGV0WkEBoNlN[T<RDH2
+R1
+w1498411074
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regA.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regA.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nreg@a
+!i10b 1
+!s100 >m69o<a]22]J8`YgaAd>[0
+!s85 0
+!s108 1498698441.898000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regA.v|
+!s101 -O0
+vRegAB
+Iz3Q:55E]O8Y5PGTJ_FMnP2
+VObWlYUT^[_3`PP6c80_TF1
+R1
+w1498412246
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regAB.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regAB.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@reg@a@b
+!i10b 1
+!s100 _E8fEa@@zel[[8SHboNaW2
+!s85 0
+!s108 1498698441.811000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regAB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regAB.v|
+!s101 -O0
+vregB
+I4@zih=h=bOG8<f8g7I>Fb3
+V7gQ`@ae?bSc9faIoDUD>X0
+R1
+w1498411671
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regB.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regB.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nreg@b
+!i10b 1
+!s100 o`2c;SAF5Qg_>G_S[Y<0^1
+!s85 0
+!s108 1498698441.721000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regB.v|
+!s101 -O0
+vregP
+IHagKY_nE_=>a2F6BBU8`c1
+V:06n<DVEl4iVHXC1QjR?f1
+R1
+w1498411154
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regP.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regP.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nreg@p
+!i10b 1
+!s100 CYO_iI5K4Vi=:M?d?5?Kj2
+!s85 0
+!s108 1498698441.625000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/regP.v|
+!s101 -O0
+vstateMachine
+I;iNDd_ShbPT:9VM0NOUMD3
+VW`LLL>4MP9fnS:HiGF8kT2
+R1
+w1498412284
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/stateMachine.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/stateMachine.v
+L0 1
+R2
+r1
+31
+R3
+nstate@machine
+R4
+!i10b 1
+!s100 2J16a?P41QHBXi4b]BSLJ3
+!s85 0
+!s108 1498698441.528000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/stateMachine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/stateMachine.v|
+!s101 -O0

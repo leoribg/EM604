@@ -1,0 +1,638 @@
+Simulator report for project2
+Wed Jun 28 22:23:48 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 372 nodes    ;
+; Simulation Coverage         ;      60.75 % ;
+; Total Number of Transitions ; 4057         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                 ;               ;
+; Vector input source                                                                        ; C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/Waveform2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                  ; On            ;
+; Check outputs                                                                              ; Off                                                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                           ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                           ; Transport     ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------+
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      60.75 % ;
+; Total nodes checked                                 ; 372          ;
+; Total output ports checked                          ; 372          ;
+; Total output ports with complete 1/0-value coverage ; 226          ;
+; Total output ports with no 1/0-value coverage       ; 95           ;
+; Total output ports with no 1-value coverage         ; 109          ;
+; Total output ports with no 0-value coverage         ; 132          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |project2|clk                                                                          ; |project2|clk                                                                          ; out              ;
+; |project2|quotientFlag[0]                                                              ; |project2|quotientFlag[0]                                                              ; pin_out          ;
+; |project2|quotientFlag[1]                                                              ; |project2|quotientFlag[1]                                                              ; pin_out          ;
+; |project2|quotientFlag[2]                                                              ; |project2|quotientFlag[2]                                                              ; pin_out          ;
+; |project2|quotientFlag[3]                                                              ; |project2|quotientFlag[3]                                                              ; pin_out          ;
+; |project2|quotientFlag[4]                                                              ; |project2|quotientFlag[4]                                                              ; pin_out          ;
+; |project2|quotientFlag[5]                                                              ; |project2|quotientFlag[5]                                                              ; pin_out          ;
+; |project2|quotientFlag[6]                                                              ; |project2|quotientFlag[6]                                                              ; pin_out          ;
+; |project2|quotientFlag[7]                                                              ; |project2|quotientFlag[7]                                                              ; pin_out          ;
+; |project2|remainderFlag[0]                                                             ; |project2|remainderFlag[0]                                                             ; pin_out          ;
+; |project2|remainderFlag[1]                                                             ; |project2|remainderFlag[1]                                                             ; pin_out          ;
+; |project2|remainderFlag[2]                                                             ; |project2|remainderFlag[2]                                                             ; pin_out          ;
+; |project2|remainderFlag[3]                                                             ; |project2|remainderFlag[3]                                                             ; pin_out          ;
+; |project2|remainderFlag[4]                                                             ; |project2|remainderFlag[4]                                                             ; pin_out          ;
+; |project2|remainderFlag[5]                                                             ; |project2|remainderFlag[5]                                                             ; pin_out          ;
+; |project2|remainderFlag[6]                                                             ; |project2|remainderFlag[6]                                                             ; pin_out          ;
+; |project2|remainderFlag[7]                                                             ; |project2|remainderFlag[7]                                                             ; pin_out          ;
+; |project2|remainderFlag[8]                                                             ; |project2|remainderFlag[8]                                                             ; pin_out          ;
+; |project2|divisor:DIV|AddSub:AS|out[8]                                                 ; |project2|divisor:DIV|AddSub:AS|out[8]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[7]                                                 ; |project2|divisor:DIV|AddSub:AS|out[7]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[6]                                                 ; |project2|divisor:DIV|AddSub:AS|out[6]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[5]                                                 ; |project2|divisor:DIV|AddSub:AS|out[5]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[4]                                                 ; |project2|divisor:DIV|AddSub:AS|out[4]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[3]                                                 ; |project2|divisor:DIV|AddSub:AS|out[3]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[2]                                                 ; |project2|divisor:DIV|AddSub:AS|out[2]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[1]                                                 ; |project2|divisor:DIV|AddSub:AS|out[1]                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|out[0]                                                 ; |project2|divisor:DIV|AddSub:AS|out[0]                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~3                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~3                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~4                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~4                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~5                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~5                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~6                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~6                                                 ; out              ;
+; |project2|divisor:DIV|regP:RP|out[0]                                                   ; |project2|divisor:DIV|regP:RP|out[0]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out~0                                                    ; |project2|divisor:DIV|regP:RP|out~0                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~1                                                    ; |project2|divisor:DIV|regP:RP|out~1                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~2                                                    ; |project2|divisor:DIV|regP:RP|out~2                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~3                                                    ; |project2|divisor:DIV|regP:RP|out~3                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~4                                                    ; |project2|divisor:DIV|regP:RP|out~4                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~5                                                    ; |project2|divisor:DIV|regP:RP|out~5                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~6                                                    ; |project2|divisor:DIV|regP:RP|out~6                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~7                                                    ; |project2|divisor:DIV|regP:RP|out~7                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~8                                                    ; |project2|divisor:DIV|regP:RP|out~8                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~9                                                    ; |project2|divisor:DIV|regP:RP|out~9                                                    ; out              ;
+; |project2|divisor:DIV|regP:RP|out~10                                                   ; |project2|divisor:DIV|regP:RP|out~10                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~11                                                   ; |project2|divisor:DIV|regP:RP|out~11                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~12                                                   ; |project2|divisor:DIV|regP:RP|out~12                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~13                                                   ; |project2|divisor:DIV|regP:RP|out~13                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~14                                                   ; |project2|divisor:DIV|regP:RP|out~14                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~15                                                   ; |project2|divisor:DIV|regP:RP|out~15                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~16                                                   ; |project2|divisor:DIV|regP:RP|out~16                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out~17                                                   ; |project2|divisor:DIV|regP:RP|out~17                                                   ; out              ;
+; |project2|divisor:DIV|regP:RP|out[8]                                                   ; |project2|divisor:DIV|regP:RP|out[8]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[7]                                                   ; |project2|divisor:DIV|regP:RP|out[7]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[6]                                                   ; |project2|divisor:DIV|regP:RP|out[6]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[5]                                                   ; |project2|divisor:DIV|regP:RP|out[5]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[4]                                                   ; |project2|divisor:DIV|regP:RP|out[4]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[3]                                                   ; |project2|divisor:DIV|regP:RP|out[3]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[2]                                                   ; |project2|divisor:DIV|regP:RP|out[2]                                                   ; regout           ;
+; |project2|divisor:DIV|regP:RP|out[1]                                                   ; |project2|divisor:DIV|regP:RP|out[1]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[0]                                                   ; |project2|divisor:DIV|regA:RA|out[0]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out~0                                                    ; |project2|divisor:DIV|regA:RA|out~0                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~1                                                    ; |project2|divisor:DIV|regA:RA|out~1                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~2                                                    ; |project2|divisor:DIV|regA:RA|out~2                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~3                                                    ; |project2|divisor:DIV|regA:RA|out~3                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~4                                                    ; |project2|divisor:DIV|regA:RA|out~4                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~5                                                    ; |project2|divisor:DIV|regA:RA|out~5                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~6                                                    ; |project2|divisor:DIV|regA:RA|out~6                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~7                                                    ; |project2|divisor:DIV|regA:RA|out~7                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~8                                                    ; |project2|divisor:DIV|regA:RA|out~8                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~9                                                    ; |project2|divisor:DIV|regA:RA|out~9                                                    ; out              ;
+; |project2|divisor:DIV|regA:RA|out~10                                                   ; |project2|divisor:DIV|regA:RA|out~10                                                   ; out              ;
+; |project2|divisor:DIV|regA:RA|out~11                                                   ; |project2|divisor:DIV|regA:RA|out~11                                                   ; out              ;
+; |project2|divisor:DIV|regA:RA|out~12                                                   ; |project2|divisor:DIV|regA:RA|out~12                                                   ; out              ;
+; |project2|divisor:DIV|regA:RA|out~13                                                   ; |project2|divisor:DIV|regA:RA|out~13                                                   ; out              ;
+; |project2|divisor:DIV|regA:RA|out~14                                                   ; |project2|divisor:DIV|regA:RA|out~14                                                   ; out              ;
+; |project2|divisor:DIV|regA:RA|out~15                                                   ; |project2|divisor:DIV|regA:RA|out~15                                                   ; out              ;
+; |project2|divisor:DIV|regA:RA|out[7]                                                   ; |project2|divisor:DIV|regA:RA|out[7]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[6]                                                   ; |project2|divisor:DIV|regA:RA|out[6]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[5]                                                   ; |project2|divisor:DIV|regA:RA|out[5]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[4]                                                   ; |project2|divisor:DIV|regA:RA|out[4]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[3]                                                   ; |project2|divisor:DIV|regA:RA|out[3]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[2]                                                   ; |project2|divisor:DIV|regA:RA|out[2]                                                   ; regout           ;
+; |project2|divisor:DIV|regA:RA|out[1]                                                   ; |project2|divisor:DIV|regA:RA|out[1]                                                   ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|cont[1]                                            ; |project2|divisor:DIV|divisorSM:DSM|cont[1]                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|cont~1                                             ; |project2|divisor:DIV|divisorSM:DSM|cont~1                                             ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|cont~2                                             ; |project2|divisor:DIV|divisorSM:DSM|cont~2                                             ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|cont~3                                             ; |project2|divisor:DIV|divisorSM:DSM|cont~3                                             ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|WideOr1                                            ; |project2|divisor:DIV|divisorSM:DSM|WideOr1                                            ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|cont[0]                                            ; |project2|divisor:DIV|divisorSM:DSM|cont[0]                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|next.Desloca                                       ; |project2|divisor:DIV|divisorSM:DSM|next.Desloca                                       ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|next.Subtrai                                       ; |project2|divisor:DIV|divisorSM:DSM|next.Subtrai                                       ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|next.EsqQuoc                                       ; |project2|divisor:DIV|divisorSM:DSM|next.EsqQuoc                                       ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|next.Restaura                                      ; |project2|divisor:DIV|divisorSM:DSM|next.Restaura                                      ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|enableA                                            ; |project2|divisor:DIV|divisorSM:DSM|enableA                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|enableB                                            ; |project2|divisor:DIV|divisorSM:DSM|enableB                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Desloca                                        ; |project2|divisor:DIV|divisorSM:DSM|now.Desloca                                        ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Subtrai                                        ; |project2|divisor:DIV|divisorSM:DSM|now.Subtrai                                        ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|now.EsqQuoc                                        ; |project2|divisor:DIV|divisorSM:DSM|now.EsqQuoc                                        ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Restaura                                       ; |project2|divisor:DIV|divisorSM:DSM|now.Restaura                                       ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|enableP                                            ; |project2|divisor:DIV|divisorSM:DSM|enableP                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|WideOr3                                            ; |project2|divisor:DIV|divisorSM:DSM|WideOr3                                            ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|loadA                                              ; |project2|divisor:DIV|divisorSM:DSM|loadA                                              ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|loadB                                              ; |project2|divisor:DIV|divisorSM:DSM|loadB                                              ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|WideOr4                                            ; |project2|divisor:DIV|divisorSM:DSM|WideOr4                                            ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|loadP                                              ; |project2|divisor:DIV|divisorSM:DSM|loadP                                              ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|shift                                              ; |project2|divisor:DIV|divisorSM:DSM|shift                                              ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|ctrlS                                              ; |project2|divisor:DIV|divisorSM:DSM|ctrlS                                              ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|ctrlS~0                                            ; |project2|divisor:DIV|divisorSM:DSM|ctrlS~0                                            ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|next~0                                             ; |project2|divisor:DIV|divisorSM:DSM|next~0                                             ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Desloca~0                                      ; |project2|divisor:DIV|divisorSM:DSM|now.Desloca~0                                      ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|next.Subtrai~0                                     ; |project2|divisor:DIV|divisorSM:DSM|next.Subtrai~0                                     ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Subtrai~0                                      ; |project2|divisor:DIV|divisorSM:DSM|now.Subtrai~0                                      ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|next.EsqQuoc~0                                     ; |project2|divisor:DIV|divisorSM:DSM|next.EsqQuoc~0                                     ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|now.EsqQuoc~0                                      ; |project2|divisor:DIV|divisorSM:DSM|now.EsqQuoc~0                                      ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|next.Restaura~0                                    ; |project2|divisor:DIV|divisorSM:DSM|next.Restaura~0                                    ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Restaura~0                                     ; |project2|divisor:DIV|divisorSM:DSM|now.Restaura~0                                     ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|next~4                                             ; |project2|divisor:DIV|divisorSM:DSM|next~4                                             ; out0             ;
+; |project2|stateMachine:SM|now.S1                                                       ; |project2|stateMachine:SM|now.S1                                                       ; regout           ;
+; |project2|stateMachine:SM|now.S2                                                       ; |project2|stateMachine:SM|now.S2                                                       ; regout           ;
+; |project2|stateMachine:SM|now.S3                                                       ; |project2|stateMachine:SM|now.S3                                                       ; regout           ;
+; |project2|stateMachine:SM|now.S4                                                       ; |project2|stateMachine:SM|now.S4                                                       ; regout           ;
+; |project2|stateMachine:SM|now.S5                                                       ; |project2|stateMachine:SM|now.S5                                                       ; regout           ;
+; |project2|stateMachine:SM|next.S0                                                      ; |project2|stateMachine:SM|next.S0                                                      ; out              ;
+; |project2|stateMachine:SM|next.S3                                                      ; |project2|stateMachine:SM|next.S3                                                      ; out              ;
+; |project2|stateMachine:SM|next.S5                                                      ; |project2|stateMachine:SM|next.S5                                                      ; out              ;
+; |project2|stateMachine:SM|WideOr3                                                      ; |project2|stateMachine:SM|WideOr3                                                      ; out0             ;
+; |project2|stateMachine:SM|okB~0                                                        ; |project2|stateMachine:SM|okB~0                                                        ; out0             ;
+; |project2|stateMachine:SM|addressBus[0]                                                ; |project2|stateMachine:SM|addressBus[0]                                                ; out              ;
+; |project2|stateMachine:SM|WideOr4                                                      ; |project2|stateMachine:SM|WideOr4                                                      ; out0             ;
+; |project2|stateMachine:SM|now~0                                                        ; |project2|stateMachine:SM|now~0                                                        ; out0             ;
+; |project2|stateMachine:SM|now.S0~0                                                     ; |project2|stateMachine:SM|now.S0~0                                                     ; out0             ;
+; |project2|stateMachine:SM|Selector1~0                                                  ; |project2|stateMachine:SM|Selector1~0                                                  ; out0             ;
+; |project2|stateMachine:SM|enA                                                          ; |project2|stateMachine:SM|enA                                                          ; out0             ;
+; |project2|stateMachine:SM|now.S3~0                                                     ; |project2|stateMachine:SM|now.S3~0                                                     ; out0             ;
+; |project2|stateMachine:SM|WideOr0~1                                                    ; |project2|stateMachine:SM|WideOr0~1                                                    ; out0             ;
+; |project2|stateMachine:SM|enB                                                          ; |project2|stateMachine:SM|enB                                                          ; out0             ;
+; |project2|stateMachine:SM|now.S5~0                                                     ; |project2|stateMachine:SM|now.S5~0                                                     ; out0             ;
+; |project2|stateMachine:SM|next.S0~0                                                    ; |project2|stateMachine:SM|next.S0~0                                                    ; out0             ;
+; |project2|stateMachine:SM|now~5                                                        ; |project2|stateMachine:SM|now~5                                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector1~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector1~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector1~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector1~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector1~2                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector1~2                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector2~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector2~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector2~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector2~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector2~2                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector2~2                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector3~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector3~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector3~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector3~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector3~2                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector3~2                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector4~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector4~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector4~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector4~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector5~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector5~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector6~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector6~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector6~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector6~1                                        ; out0             ;
+; |project2|stateMachine:SM|Selector1~1                                                  ; |project2|stateMachine:SM|Selector1~1                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector2~0                                                  ; |project2|stateMachine:SM|Selector2~0                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector3~1                                                  ; |project2|stateMachine:SM|Selector3~1                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector10~0                                                 ; |project2|stateMachine:SM|Selector10~0                                                 ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|LessThan0~0                                        ; |project2|divisor:DIV|divisorSM:DSM|LessThan0~0                                        ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~0                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~0                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~1                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~1                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~2                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~2                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~3                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~3                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~4                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~4                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~7                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~7                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~8                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~8                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~9                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~9                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~10                                                ; |project2|divisor:DIV|AddSub:AS|Add0~10                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~11                                                ; |project2|divisor:DIV|AddSub:AS|Add0~11                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~12                                                ; |project2|divisor:DIV|AddSub:AS|Add0~12                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~13                                                ; |project2|divisor:DIV|AddSub:AS|Add0~13                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~14                                                ; |project2|divisor:DIV|AddSub:AS|Add0~14                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~17                                                ; |project2|divisor:DIV|AddSub:AS|Add0~17                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~18                                                ; |project2|divisor:DIV|AddSub:AS|Add0~18                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~19                                                ; |project2|divisor:DIV|AddSub:AS|Add0~19                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~22                                                ; |project2|divisor:DIV|AddSub:AS|Add0~22                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~23                                                ; |project2|divisor:DIV|AddSub:AS|Add0~23                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~24                                                ; |project2|divisor:DIV|AddSub:AS|Add0~24                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~27                                                ; |project2|divisor:DIV|AddSub:AS|Add0~27                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~28                                                ; |project2|divisor:DIV|AddSub:AS|Add0~28                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~29                                                ; |project2|divisor:DIV|AddSub:AS|Add0~29                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~32                                                ; |project2|divisor:DIV|AddSub:AS|Add0~32                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~33                                                ; |project2|divisor:DIV|AddSub:AS|Add0~33                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~34                                                ; |project2|divisor:DIV|AddSub:AS|Add0~34                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~37                                                ; |project2|divisor:DIV|AddSub:AS|Add0~37                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~0                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~0                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~1                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~1                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~3                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~3                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~4                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~4                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~5                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~5                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~6                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~6                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~7                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~7                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~8                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~8                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~9                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~9                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~10                                                ; |project2|divisor:DIV|AddSub:AS|Add1~10                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~13                                                ; |project2|divisor:DIV|AddSub:AS|Add1~13                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~14                                                ; |project2|divisor:DIV|AddSub:AS|Add1~14                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~15                                                ; |project2|divisor:DIV|AddSub:AS|Add1~15                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~16                                                ; |project2|divisor:DIV|AddSub:AS|Add1~16                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~17                                                ; |project2|divisor:DIV|AddSub:AS|Add1~17                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~18                                                ; |project2|divisor:DIV|AddSub:AS|Add1~18                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~19                                                ; |project2|divisor:DIV|AddSub:AS|Add1~19                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~20                                                ; |project2|divisor:DIV|AddSub:AS|Add1~20                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~21                                                ; |project2|divisor:DIV|AddSub:AS|Add1~21                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~22                                                ; |project2|divisor:DIV|AddSub:AS|Add1~22                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~23                                                ; |project2|divisor:DIV|AddSub:AS|Add1~23                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~24                                                ; |project2|divisor:DIV|AddSub:AS|Add1~24                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~25                                                ; |project2|divisor:DIV|AddSub:AS|Add1~25                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~26                                                ; |project2|divisor:DIV|AddSub:AS|Add1~26                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~27                                                ; |project2|divisor:DIV|AddSub:AS|Add1~27                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~28                                                ; |project2|divisor:DIV|AddSub:AS|Add1~28                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~29                                                ; |project2|divisor:DIV|AddSub:AS|Add1~29                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~30                                                ; |project2|divisor:DIV|AddSub:AS|Add1~30                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~31                                                ; |project2|divisor:DIV|AddSub:AS|Add1~31                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~32                                                ; |project2|divisor:DIV|AddSub:AS|Add1~32                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~33                                                ; |project2|divisor:DIV|AddSub:AS|Add1~33                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~34                                                ; |project2|divisor:DIV|AddSub:AS|Add1~34                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~35                                                ; |project2|divisor:DIV|AddSub:AS|Add1~35                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~36                                                ; |project2|divisor:DIV|AddSub:AS|Add1~36                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~37                                                ; |project2|divisor:DIV|AddSub:AS|Add1~37                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~38                                                ; |project2|divisor:DIV|AddSub:AS|Add1~38                                                ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Add0~0                                             ; |project2|divisor:DIV|divisorSM:DSM|Add0~0                                             ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Add0~1                                             ; |project2|divisor:DIV|divisorSM:DSM|Add0~1                                             ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Add0~2                                             ; |project2|divisor:DIV|divisorSM:DSM|Add0~2                                             ; out0             ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a1 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a1 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a2 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a2 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a3 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a3 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a4 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a4 ; portadataout0    ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |project2|rst                                                                          ; |project2|rst                                                                          ; out              ;
+; |project2|addressA[0]                                                                  ; |project2|addressA[0]                                                                  ; out              ;
+; |project2|addressA[1]                                                                  ; |project2|addressA[1]                                                                  ; out              ;
+; |project2|addressA[2]                                                                  ; |project2|addressA[2]                                                                  ; out              ;
+; |project2|addressA[3]                                                                  ; |project2|addressA[3]                                                                  ; out              ;
+; |project2|addressA[4]                                                                  ; |project2|addressA[4]                                                                  ; out              ;
+; |project2|addressA[5]                                                                  ; |project2|addressA[5]                                                                  ; out              ;
+; |project2|addressA[6]                                                                  ; |project2|addressA[6]                                                                  ; out              ;
+; |project2|addressA[7]                                                                  ; |project2|addressA[7]                                                                  ; out              ;
+; |project2|addressA[8]                                                                  ; |project2|addressA[8]                                                                  ; out              ;
+; |project2|addressB[0]                                                                  ; |project2|addressB[0]                                                                  ; out              ;
+; |project2|addressB[1]                                                                  ; |project2|addressB[1]                                                                  ; out              ;
+; |project2|addressB[2]                                                                  ; |project2|addressB[2]                                                                  ; out              ;
+; |project2|addressB[3]                                                                  ; |project2|addressB[3]                                                                  ; out              ;
+; |project2|addressB[4]                                                                  ; |project2|addressB[4]                                                                  ; out              ;
+; |project2|addressB[5]                                                                  ; |project2|addressB[5]                                                                  ; out              ;
+; |project2|addressB[6]                                                                  ; |project2|addressB[6]                                                                  ; out              ;
+; |project2|addressB[7]                                                                  ; |project2|addressB[7]                                                                  ; out              ;
+; |project2|addressB[8]                                                                  ; |project2|addressB[8]                                                                  ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~0                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~0                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~1                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~1                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~2                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~2                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[7]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[7]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[6]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[6]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[5]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[5]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[2]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[2]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[7]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[7]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[6]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[6]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[5]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[5]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[4]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[4]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[3]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[3]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[1]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[1]                                                ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB~0                                                   ; |project2|divisor:DIV|regB:RB|outB~0                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~1                                                   ; |project2|divisor:DIV|regB:RB|outB~1                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~2                                                   ; |project2|divisor:DIV|regB:RB|outB~2                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~3                                                   ; |project2|divisor:DIV|regB:RB|outB~3                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~4                                                   ; |project2|divisor:DIV|regB:RB|outB~4                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~5                                                   ; |project2|divisor:DIV|regB:RB|outB~5                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~7                                                   ; |project2|divisor:DIV|regB:RB|outB~7                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB[8]                                                  ; |project2|divisor:DIV|regB:RB|outB[8]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[7]                                                  ; |project2|divisor:DIV|regB:RB|outB[7]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[6]                                                  ; |project2|divisor:DIV|regB:RB|outB[6]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[5]                                                  ; |project2|divisor:DIV|regB:RB|outB[5]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[4]                                                  ; |project2|divisor:DIV|regB:RB|outB[4]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[3]                                                  ; |project2|divisor:DIV|regB:RB|outB[3]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[1]                                                  ; |project2|divisor:DIV|regB:RB|outB[1]                                                  ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|cont~0                                             ; |project2|divisor:DIV|divisorSM:DSM|cont~0                                             ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|cont[3]                                            ; |project2|divisor:DIV|divisorSM:DSM|cont[3]                                            ; regout           ;
+; |project2|stateMachine:SM|now.S0                                                       ; |project2|stateMachine:SM|now.S0                                                       ; regout           ;
+; |project2|stateMachine:SM|addressBus[5]                                                ; |project2|stateMachine:SM|addressBus[5]                                                ; out              ;
+; |project2|stateMachine:SM|addressBus[4]                                                ; |project2|stateMachine:SM|addressBus[4]                                                ; out              ;
+; |project2|stateMachine:SM|addressBus[3]                                                ; |project2|stateMachine:SM|addressBus[3]                                                ; out              ;
+; |project2|stateMachine:SM|addressBus[2]                                                ; |project2|stateMachine:SM|addressBus[2]                                                ; out              ;
+; |project2|stateMachine:SM|addressBus[1]                                                ; |project2|stateMachine:SM|addressBus[1]                                                ; out              ;
+; |project2|stateMachine:SM|addressBus[7]                                                ; |project2|stateMachine:SM|addressBus[7]                                                ; out              ;
+; |project2|stateMachine:SM|addressBus[8]                                                ; |project2|stateMachine:SM|addressBus[8]                                                ; out              ;
+; |project2|stateMachine:SM|bAddress[0]                                                  ; |project2|stateMachine:SM|bAddress[0]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[1]                                                  ; |project2|stateMachine:SM|bAddress[1]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[2]                                                  ; |project2|stateMachine:SM|bAddress[2]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[3]                                                  ; |project2|stateMachine:SM|bAddress[3]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[4]                                                  ; |project2|stateMachine:SM|bAddress[4]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[5]                                                  ; |project2|stateMachine:SM|bAddress[5]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[6]                                                  ; |project2|stateMachine:SM|bAddress[6]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[7]                                                  ; |project2|stateMachine:SM|bAddress[7]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[8]                                                  ; |project2|stateMachine:SM|bAddress[8]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[0]                                                  ; |project2|stateMachine:SM|aAddress[0]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[1]                                                  ; |project2|stateMachine:SM|aAddress[1]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[2]                                                  ; |project2|stateMachine:SM|aAddress[2]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[3]                                                  ; |project2|stateMachine:SM|aAddress[3]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[4]                                                  ; |project2|stateMachine:SM|aAddress[4]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[5]                                                  ; |project2|stateMachine:SM|aAddress[5]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[6]                                                  ; |project2|stateMachine:SM|aAddress[6]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[7]                                                  ; |project2|stateMachine:SM|aAddress[7]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[8]                                                  ; |project2|stateMachine:SM|aAddress[8]                                                  ; out              ;
+; |project2|stateMachine:SM|addressBus[6]                                                ; |project2|stateMachine:SM|addressBus[6]                                                ; out              ;
+; |project2|stateMachine:SM|now~1                                                        ; |project2|stateMachine:SM|now~1                                                        ; out0             ;
+; |project2|stateMachine:SM|WideOr0~0                                                    ; |project2|stateMachine:SM|WideOr0~0                                                    ; out0             ;
+; |project2|stateMachine:SM|now~9                                                        ; |project2|stateMachine:SM|now~9                                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector0~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector0~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector0~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector0~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector0~2                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector0~2                                        ; out0             ;
+; |project2|stateMachine:SM|Selector0~0                                                  ; |project2|stateMachine:SM|Selector0~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector1~2                                                  ; |project2|stateMachine:SM|Selector1~2                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector2~1                                                  ; |project2|stateMachine:SM|Selector2~1                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector4~0                                                  ; |project2|stateMachine:SM|Selector4~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector5~0                                                  ; |project2|stateMachine:SM|Selector5~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector6~0                                                  ; |project2|stateMachine:SM|Selector6~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector7~0                                                  ; |project2|stateMachine:SM|Selector7~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector8~0                                                  ; |project2|stateMachine:SM|Selector8~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector9~0                                                  ; |project2|stateMachine:SM|Selector9~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector11~0                                                 ; |project2|stateMachine:SM|Selector11~0                                                 ; out              ;
+; |project2|divisor:DIV|AddSub:AS|Add0~5                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~5                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~6                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~6                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~15                                                ; |project2|divisor:DIV|AddSub:AS|Add0~15                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~16                                                ; |project2|divisor:DIV|AddSub:AS|Add0~16                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~20                                                ; |project2|divisor:DIV|AddSub:AS|Add0~20                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~21                                                ; |project2|divisor:DIV|AddSub:AS|Add0~21                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~25                                                ; |project2|divisor:DIV|AddSub:AS|Add0~25                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~26                                                ; |project2|divisor:DIV|AddSub:AS|Add0~26                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~30                                                ; |project2|divisor:DIV|AddSub:AS|Add0~30                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~31                                                ; |project2|divisor:DIV|AddSub:AS|Add0~31                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~35                                                ; |project2|divisor:DIV|AddSub:AS|Add0~35                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~36                                                ; |project2|divisor:DIV|AddSub:AS|Add0~36                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~2                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~2                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~11                                                ; |project2|divisor:DIV|AddSub:AS|Add1~11                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~12                                                ; |project2|divisor:DIV|AddSub:AS|Add1~12                                                ; out0             ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a5 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a5 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a6 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a6 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a7 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a7 ; portadataout0    ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |project2|addressA[0]                                                                  ; |project2|addressA[0]                                                                  ; out              ;
+; |project2|addressA[1]                                                                  ; |project2|addressA[1]                                                                  ; out              ;
+; |project2|addressA[2]                                                                  ; |project2|addressA[2]                                                                  ; out              ;
+; |project2|addressA[3]                                                                  ; |project2|addressA[3]                                                                  ; out              ;
+; |project2|addressA[4]                                                                  ; |project2|addressA[4]                                                                  ; out              ;
+; |project2|addressA[5]                                                                  ; |project2|addressA[5]                                                                  ; out              ;
+; |project2|addressA[6]                                                                  ; |project2|addressA[6]                                                                  ; out              ;
+; |project2|addressA[7]                                                                  ; |project2|addressA[7]                                                                  ; out              ;
+; |project2|addressA[8]                                                                  ; |project2|addressA[8]                                                                  ; out              ;
+; |project2|addressB[0]                                                                  ; |project2|addressB[0]                                                                  ; out              ;
+; |project2|addressB[1]                                                                  ; |project2|addressB[1]                                                                  ; out              ;
+; |project2|addressB[2]                                                                  ; |project2|addressB[2]                                                                  ; out              ;
+; |project2|addressB[3]                                                                  ; |project2|addressB[3]                                                                  ; out              ;
+; |project2|addressB[4]                                                                  ; |project2|addressB[4]                                                                  ; out              ;
+; |project2|addressB[5]                                                                  ; |project2|addressB[5]                                                                  ; out              ;
+; |project2|addressB[6]                                                                  ; |project2|addressB[6]                                                                  ; out              ;
+; |project2|addressB[7]                                                                  ; |project2|addressB[7]                                                                  ; out              ;
+; |project2|addressB[8]                                                                  ; |project2|addressB[8]                                                                  ; out              ;
+; |project2|finished                                                                     ; |project2|finished                                                                     ; pin_out          ;
+; |project2|divisor:DIV|RegAB:RAB|signalOut                                              ; |project2|divisor:DIV|RegAB:RAB|signalOut                                              ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|always0~0                                              ; |project2|divisor:DIV|RegAB:RAB|always0~0                                              ; out0             ;
+; |project2|divisor:DIV|RegAB:RAB|signalOut~0                                            ; |project2|divisor:DIV|RegAB:RAB|signalOut~0                                            ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~0                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~0                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~1                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~1                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~2                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~2                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|auxB~7                                                 ; |project2|divisor:DIV|RegAB:RAB|auxB~7                                                 ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|okB~0                                                  ; |project2|divisor:DIV|RegAB:RAB|okB~0                                                  ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|signalOut~1                                            ; |project2|divisor:DIV|RegAB:RAB|signalOut~1                                            ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|okA~0                                                  ; |project2|divisor:DIV|RegAB:RAB|okA~0                                                  ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|okB~1                                                  ; |project2|divisor:DIV|RegAB:RAB|okB~1                                                  ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|signalOut~2                                            ; |project2|divisor:DIV|RegAB:RAB|signalOut~2                                            ; out              ;
+; |project2|divisor:DIV|RegAB:RAB|okB                                                    ; |project2|divisor:DIV|RegAB:RAB|okB                                                    ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|okA                                                    ; |project2|divisor:DIV|RegAB:RAB|okA                                                    ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[7]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[7]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[6]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[6]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[5]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[5]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[4]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[4]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[3]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[3]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[2]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[2]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[1]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[1]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxA[0]                                                ; |project2|divisor:DIV|RegAB:RAB|auxA[0]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[7]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[7]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[6]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[6]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[5]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[5]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[4]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[4]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[3]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[3]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[2]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[2]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[1]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[1]                                                ; regout           ;
+; |project2|divisor:DIV|RegAB:RAB|auxB[0]                                                ; |project2|divisor:DIV|RegAB:RAB|auxB[0]                                                ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[0]                                                  ; |project2|divisor:DIV|regB:RB|outB[0]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB~0                                                   ; |project2|divisor:DIV|regB:RB|outB~0                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~1                                                   ; |project2|divisor:DIV|regB:RB|outB~1                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~2                                                   ; |project2|divisor:DIV|regB:RB|outB~2                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~3                                                   ; |project2|divisor:DIV|regB:RB|outB~3                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~4                                                   ; |project2|divisor:DIV|regB:RB|outB~4                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~5                                                   ; |project2|divisor:DIV|regB:RB|outB~5                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~6                                                   ; |project2|divisor:DIV|regB:RB|outB~6                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~7                                                   ; |project2|divisor:DIV|regB:RB|outB~7                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB~8                                                   ; |project2|divisor:DIV|regB:RB|outB~8                                                   ; out              ;
+; |project2|divisor:DIV|regB:RB|outB[8]                                                  ; |project2|divisor:DIV|regB:RB|outB[8]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[7]                                                  ; |project2|divisor:DIV|regB:RB|outB[7]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[6]                                                  ; |project2|divisor:DIV|regB:RB|outB[6]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[5]                                                  ; |project2|divisor:DIV|regB:RB|outB[5]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[4]                                                  ; |project2|divisor:DIV|regB:RB|outB[4]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[3]                                                  ; |project2|divisor:DIV|regB:RB|outB[3]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[2]                                                  ; |project2|divisor:DIV|regB:RB|outB[2]                                                  ; regout           ;
+; |project2|divisor:DIV|regB:RB|outB[1]                                                  ; |project2|divisor:DIV|regB:RB|outB[1]                                                  ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|cont~0                                             ; |project2|divisor:DIV|divisorSM:DSM|cont~0                                             ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Fim                                            ; |project2|divisor:DIV|divisorSM:DSM|now.Fim                                            ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|divEnd                                             ; |project2|divisor:DIV|divisorSM:DSM|divEnd                                             ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|next.Fim                                           ; |project2|divisor:DIV|divisorSM:DSM|next.Fim                                           ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|cont[2]                                            ; |project2|divisor:DIV|divisorSM:DSM|cont[2]                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|cont[3]                                            ; |project2|divisor:DIV|divisorSM:DSM|cont[3]                                            ; regout           ;
+; |project2|divisor:DIV|divisorSM:DSM|now.Fim~0                                          ; |project2|divisor:DIV|divisorSM:DSM|now.Fim~0                                          ; out0             ;
+; |project2|stateMachine:SM|bAddress[0]                                                  ; |project2|stateMachine:SM|bAddress[0]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[1]                                                  ; |project2|stateMachine:SM|bAddress[1]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[2]                                                  ; |project2|stateMachine:SM|bAddress[2]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[3]                                                  ; |project2|stateMachine:SM|bAddress[3]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[4]                                                  ; |project2|stateMachine:SM|bAddress[4]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[5]                                                  ; |project2|stateMachine:SM|bAddress[5]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[6]                                                  ; |project2|stateMachine:SM|bAddress[6]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[7]                                                  ; |project2|stateMachine:SM|bAddress[7]                                                  ; out              ;
+; |project2|stateMachine:SM|bAddress[8]                                                  ; |project2|stateMachine:SM|bAddress[8]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[0]                                                  ; |project2|stateMachine:SM|aAddress[0]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[1]                                                  ; |project2|stateMachine:SM|aAddress[1]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[2]                                                  ; |project2|stateMachine:SM|aAddress[2]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[3]                                                  ; |project2|stateMachine:SM|aAddress[3]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[4]                                                  ; |project2|stateMachine:SM|aAddress[4]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[5]                                                  ; |project2|stateMachine:SM|aAddress[5]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[6]                                                  ; |project2|stateMachine:SM|aAddress[6]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[7]                                                  ; |project2|stateMachine:SM|aAddress[7]                                                  ; out              ;
+; |project2|stateMachine:SM|aAddress[8]                                                  ; |project2|stateMachine:SM|aAddress[8]                                                  ; out              ;
+; |project2|stateMachine:SM|now.S6                                                       ; |project2|stateMachine:SM|now.S6                                                       ; regout           ;
+; |project2|stateMachine:SM|ini_div                                                      ; |project2|stateMachine:SM|ini_div                                                      ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector0~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector0~0                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector0~1                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector0~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector0~2                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector0~2                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Selector5~0                                        ; |project2|divisor:DIV|divisorSM:DSM|Selector5~0                                        ; out0             ;
+; |project2|stateMachine:SM|Selector0~0                                                  ; |project2|stateMachine:SM|Selector0~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector1~2                                                  ; |project2|stateMachine:SM|Selector1~2                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector2~1                                                  ; |project2|stateMachine:SM|Selector2~1                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector3~0                                                  ; |project2|stateMachine:SM|Selector3~0                                                  ; out0             ;
+; |project2|stateMachine:SM|Selector4~0                                                  ; |project2|stateMachine:SM|Selector4~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector5~0                                                  ; |project2|stateMachine:SM|Selector5~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector6~0                                                  ; |project2|stateMachine:SM|Selector6~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector7~0                                                  ; |project2|stateMachine:SM|Selector7~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector8~0                                                  ; |project2|stateMachine:SM|Selector8~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector9~0                                                  ; |project2|stateMachine:SM|Selector9~0                                                  ; out              ;
+; |project2|stateMachine:SM|Selector11~0                                                 ; |project2|stateMachine:SM|Selector11~0                                                 ; out              ;
+; |project2|divisor:DIV|divisorSM:DSM|LessThan0~1                                        ; |project2|divisor:DIV|divisorSM:DSM|LessThan0~1                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|LessThan0~2                                        ; |project2|divisor:DIV|divisorSM:DSM|LessThan0~2                                        ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|LessThan0~3                                        ; |project2|divisor:DIV|divisorSM:DSM|LessThan0~3                                        ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~5                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~5                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~6                                                 ; |project2|divisor:DIV|AddSub:AS|Add0~6                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~15                                                ; |project2|divisor:DIV|AddSub:AS|Add0~15                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~16                                                ; |project2|divisor:DIV|AddSub:AS|Add0~16                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~20                                                ; |project2|divisor:DIV|AddSub:AS|Add0~20                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~21                                                ; |project2|divisor:DIV|AddSub:AS|Add0~21                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~25                                                ; |project2|divisor:DIV|AddSub:AS|Add0~25                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~26                                                ; |project2|divisor:DIV|AddSub:AS|Add0~26                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~30                                                ; |project2|divisor:DIV|AddSub:AS|Add0~30                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~31                                                ; |project2|divisor:DIV|AddSub:AS|Add0~31                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~35                                                ; |project2|divisor:DIV|AddSub:AS|Add0~35                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add0~36                                                ; |project2|divisor:DIV|AddSub:AS|Add0~36                                                ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~2                                                 ; |project2|divisor:DIV|AddSub:AS|Add1~2                                                 ; out0             ;
+; |project2|divisor:DIV|AddSub:AS|Add1~11                                                ; |project2|divisor:DIV|AddSub:AS|Add1~11                                                ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Add0~3                                             ; |project2|divisor:DIV|divisorSM:DSM|Add0~3                                             ; out0             ;
+; |project2|divisor:DIV|divisorSM:DSM|Add0~4                                             ; |project2|divisor:DIV|divisorSM:DSM|Add0~4                                             ; out0             ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a0 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a0 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a5 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a5 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a6 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a6 ; portadataout0    ;
+; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a7 ; |project2|memROM:MROM|altsyncram:pos_rtl_0|altsyncram_eq61:auto_generated|ram_block1a7 ; portadataout0    ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jun 28 22:23:48 2017
+Info: Command: quartus_sim --simulation_results_format=VWF project2 -c project2
+Info (324025): Using vector source file "C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/Waveform2.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      60.75 %
+Info (328052): Number of transitions in simulation is 4057
+Info (324045): Vector file project2.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 343 megabytes
+    Info: Processing ended: Wed Jun 28 22:23:48 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

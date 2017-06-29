@@ -1,0 +1,158 @@
+module maquina_divisor(ini_div, clk, bitP, loadA, loadB, loadP, enableA, enableB, enableP, desloc, fim_div, ctrlS, estado, contador);
+// Maquina de estados com três always que toma conta dos sinais
+input clk, bitP, ini_div; // ini_div é meu reset // bitP é o bit mais significativo de P que vai me indicar quais operaçoes devo fazer
+output reg loadA, loadB, loadP, enableA, enableB, enableP, desloc, fim_div, ctrlS;// ctrlS é o sinal que liga o mux
+output [2:0]estado;
+output [5:0]contador;
+
+reg [5:0] cont;
+reg [2:0] atual, seguinte;
+			
+assign estado = atual; 
+assign contador = cont;
+
+parameter  Inicio = 3'b000, Desloca = 3'b001, Subtrai = 3'b010, EsqQuoc = 3'b011, Restaura = 3'b100, Fim = 3'b101 ;
+
+always @ (*)
+begin
+case (atual)
+			Inicio : seguinte <= Desloca;
+			Desloca: seguinte <= Subtrai;
+			Subtrai: seguinte <= EsqQuoc;
+			EsqQuoc: seguinte <= Restaura;
+			Restaura: if (cont > 31) seguinte <= Fim;
+				 else seguinte <= Desloca;	
+			Fim: seguinte <= Fim;
+endcase
+end
+
+ 
+always@ (negedge clk or posedge ini_div)
+begin
+	if(ini_div) 
+	begin
+		atual <= Inicio;
+		cont <= 6'b000000;
+	end
+	else
+		begin
+		cont  <= cont + 1'b1;
+		atual <= seguinte;
+		end
+	 
+end
+	
+	
+always @ (atual)
+begin
+	case(atual)
+	
+		Inicio: begin
+		
+				enableA <= 1'b1; 
+				enableB <= 1'b1; 
+				enableP <= 1'b0; 
+				loadA <= 1'b1; 
+				loadB <= 1'b1; 
+				loadP <= 1'b0; 
+				desloc  <= 1'b0; 
+				fim_div <= 1'b0;
+				ctrlS <= 1'b0;
+				// Carrega os dados de A e B 
+		end
+				
+		Desloca:	begin
+				
+				enableA <= 1'b1; 
+				enableB <= 1'b0; 
+				enableP <= 1'b1;
+				loadA <= 1'b0; 
+				loadB <= 1'b0; 
+				loadP <= 1'b0; 
+				desloc  <= 1'b1; 
+				fim_div <= 1'b0;
+				ctrlS <= 1'b0;
+				// Desloca a concatenação de RegP com regA para a esquerda 1 bit (uso do sinal Desloc);
+		end
+			
+		Subtrai: begin
+		
+				enableA <= 1'b0; 
+				enableB <= 1'b0; 
+				enableP <= 1'b1;
+				loadA <= 1'b0; 
+				loadB <= 1'b0; 
+				loadP <= 1'b1; 
+				desloc  <= 1'b0;
+				fim_div <= 1'b0;
+				ctrlS <= 1'b0;
+			//subtrai regB de regP e armazena o resultado em regP (uso do sinal ctrlS);
+				
+			end
+			
+		EsqQuoc:	begin
+				// estado que "sobreescreve" o ultimo bit do regA dependendo do valor da operacao
+				enableA <= 1'b1; 
+				enableB <= 1'b0; 
+				enableP <= 1'b0;
+				loadA <= 1'b0; 
+				loadB <= 1'b0; 
+				loadP <= 1'b0;  
+				desloc  <= 1'b0;
+				fim_div <= 1'b0;
+				ctrlS <= 1'b0;
+						 
+				/*se a subtração do passo anterior resulta um número negativo, 
+				armazena 0 no bit menos significativo de regA, 
+				senão armazena 1 no mesmo bit 
+				(verificar se a implementação da realimentação do MSB do registrador P com o uso de um inversor está correta,
+				caso contrário, corrigir o circuito (justificar); */
+				
+		end
+				
+		Restaura:	begin
+				 
+				loadA <= 1'b0; 
+				loadB <= 1'b0; 
+				enableA <= 1'b0; 
+				enableB <= 1'b0; 
+				enableP <= 1'b1;
+				desloc  <= 1'b0;
+				fim_div <= 1'b0;
+				 
+				
+				if(bitP == 1'b1) // se o bit mais significativo de P for 1 quer dizer que a operacao deu negativa e precisa voltar ao valor de P anterior
+				begin
+					ctrlS <= 1'b1;
+					loadP <= 1'b1;
+				end	
+				else
+				begin
+					ctrlS <= 1'b0;
+					loadP <= 1'b0; 
+				end
+				
+				/*se a subtração resultou em um valor negativo em regP, 
+				restaura o valor anterior de regP, somando regB com regP (uso do sinal ctrlS); */
+				
+		end
+				
+				
+		Fim: 	begin
+				 
+				loadA <= 1'b0; 
+				loadB <= 1'b0; 
+				loadP <= 1'b0; 
+				enableA <= 1'b0; 
+				enableB <= 1'b0; 
+				enableP <= 1'b0;
+				desloc  <= 1'b0;
+				fim_div <= 1'b1;
+				ctrlS <= 1'b0;
+				// ligo o sinal que sinaliza que acabou a operacao
+		
+		end
+	endcase
+end
+endmodule
+

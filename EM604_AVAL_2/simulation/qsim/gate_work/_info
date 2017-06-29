@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Leonardo\Documents\Mestrado\EM604\EM604_2_V1\simulation\qsim
+vproject2
+IDK:jJ1<A66kkgDc=BfFn^3
+Z1 V6YlC344fm>3?YdzQEIaEn0
+Z2 dC:\Users\Leonardo\Documents\Mestrado\EM604\EM604_2_V1\simulation\qsim
+w1498699407
+Z3 8project2.vo
+Z4 Fproject2.vo
+L0 31
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 o-vlog01compat -work work -O0
+!i10b 1
+!s100 >FKVd6@?EVZ=hL=iff;M]1
+!s85 0
+!s108 1498699447.945000
+Z7 !s107 project2.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|project2.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vproject2_TB
+!i10b 1
+!s100 N5`M[FO28mZ;@9^m9cLLL1
+I3nU[Rk;gL^`DS:Jn>Yg9B3
+VUnciB6C[O7NYa4i<i<LI20
+R2
+w1498698311
+8C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v
+FC:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v
+L0 2
+R5
+r1
+!s85 0
+31
+!s108 1498699448.123000
+!s107 C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1|C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1/project2_TB.v|
+!s101 -O0
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/Leonardo/Documents/Mestrado/EM604/EM604_2_V1 -O0
+nproject2_@t@b
